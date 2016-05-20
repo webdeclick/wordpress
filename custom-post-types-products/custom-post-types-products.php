@@ -92,5 +92,4 @@ function create_marque_taxonomies() {
     register_taxonomy( 'marque', array( 'product' ), $args );
 }
 
-
 ?>
