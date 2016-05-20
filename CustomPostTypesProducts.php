@@ -1,11 +1,27 @@
 <?php
+/*
+Plugin Name: Custom Post Types Products
+Plugin URI: 
+Description: This is my first WordPress Widget Plugin
+Author: DE MOOR Vincent
+Author URI: 
+Version: 1.0
+License: GPL2
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Domain Path: /languages/
+Text Domain: custom-post-types-products
+*/
+//* If this file is called directly, abort.
+if ( ! defined( 'ABSPATH' ) ) {
+    die;
+}
 
 function products_post_type() {
 
     $labels = array(
-        'name'                => _x( 'Products', 'Post Type General Name', 'text_domain' ),
-        'singular_name'       => _x( 'Product', 'Post Type Singular Name', 'text_domain' ),
-        'menu_name'           => __( 'Products', 'text_domain' ),
+        'name'                => _x( 'Produits', 'Post Type General Name', 'text_domain' ),
+        'singular_name'       => _x( 'Produit', 'Post Type Singular Name', 'text_domain' ),
+        'menu_name'           => __( 'Produits', 'text_domain' ),
         'parent_item_colon'   => __( 'Parent Product:', 'text_domain' ),
         'all_items'           => __( 'All Products', 'text_domain' ),
         'view_item'           => __( 'View Product', 'text_domain' ),
